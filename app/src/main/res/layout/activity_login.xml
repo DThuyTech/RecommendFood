@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gardian_background"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Login">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RecommendFood"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="italic"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="95dp">
+
+    </TextView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="120dp"
+
+        app:cardCornerRadius="20dp">
+    <ImageView
+        android:layout_width="match_parent"
+
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        >
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:textColorHint="#999966"
+            android:backgroundTint="@color/black"
+            android:hint="Username"
+            android:textSize="18dp" />
+
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:textColorHint="#999966"
+            android:backgroundTint="@color/black"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:textColor="#999966"
+            android:text="Forgot password?"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_gravity="center"
+            android:textSize="13dp"
+            android:backgroundTint="#ff3399"
+            android:textColor="@color/white"
+            android:text="Log in" />
+
+        <Button
+            android:id="@+id/btnDangKy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ff3399"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+
+            android:layout_gravity="center"
+            android:text="Register" />
+        </LinearLayout>
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gardiant"
+    tools:context=".ShowFood">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_height="75dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="2 mon goi y cho cam xuc cua ban"
+            android:textSize="27dp"
+            android:textStyle="bold"
+            android:textColor="#ffff99"/>
+
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/imageShow2"-->
+<!--        android:layout_width="217dp"-->
+<!--        android:layout_height="152dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginRight="-30dp"-->
+<!--        tools:srcCompat="@tools:sample/avatars" />-->
+
+
+            <ImageView
+                android:scaleType="fitCenter"
+                android:id="@+id/imageShow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+            android:id="@+id/nameShow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên món ăn"
+            android:textColor="#ffff99"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/caloShow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calo"
+            android:textColor="#ffff99"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/linkShow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff99"
+            android:text="Đường link gợi ý"
+            android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/imageShow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+                android:id="@+id/nameShow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên món ăn"
+                android:textColor="#ffff99"
+                android:textSize="25dp" />
+            <TextView
+                android:id="@+id/caloShow2"
+                android:layout_width="match_parent"
+                android:textColor="#ffff99"
+                android:layout_height="wrap_content"
+                android:text="Calo"
+                android:textSize="25dp" />
+            <TextView
+                android:id="@+id/linkShow2"
+                android:textColor="#ffff99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đường link gợi ý"
+                android:textSize="25dp" />
+
+
+
+    <Button
+
+        android:id="@+id/btn_back"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+
+        android:drawableLeft="@drawable/ic_baseline_home_24"
+
+
+        />
+
+</LinearLayout>
+
+
+</ScrollView>

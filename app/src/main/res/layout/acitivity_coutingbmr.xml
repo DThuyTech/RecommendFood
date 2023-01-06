@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:background="@drawable/gardian_background"
+    tools:context=".CountingBMR"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="349dp"
+        android:layout_height="640dp"
+        android:src="@drawable/body"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txtchieucao"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="Chieu cao: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtdotuoi"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:text="Do tuoi: "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcannang" />
+
+    <TextView
+        android:id="@+id/txtcannang"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="Can nang: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtchieucao" />
+
+    <TextView
+        android:id="@+id/txtgioitinh"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:text="Gioi tinh: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdotuoi" />
+
+
+    <ProgressBar
+        android:id="@+id/progress_bmrrrr"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:scrollbarFadeDuration="@integer/material_motion_duration_long_1"
+        android:scrollbarSize="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tetx_bmr"/>
+
+    <TextView
+        android:id="@+id/tetx_bmr"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:hint="BMR: 0%"
+        android:text="BMR: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtgioitinh"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/txr_bmi"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:hint="BMI: 0%"
+        android:text="BMI: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bmrrrr"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txr_bmi"
+        android:text="Gợi ý một ngày cho bạn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/listview_activity"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp"
+        android:visibility="invisible"
+        android:background="@color/white"
+        android:scrollbarStyle="insideInset"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

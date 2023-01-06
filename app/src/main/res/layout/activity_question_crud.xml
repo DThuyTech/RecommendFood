@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryCRUD"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:id="@+id/edt_question_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nội dung câu hỏi" />
+    <EditText
+        android:id="@+id/edt_answer_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Đáp án 1" />
+    <EditText
+        android:id="@+id/edt_answer_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Đáp án 2" />
+    <EditText
+        android:id="@+id/edt_answer_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Đáp án 3" />
+
+    <Button
+        android:id="@+id/btn_add_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm loại món" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_question"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
