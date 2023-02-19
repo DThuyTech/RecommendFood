@@ -1,6 +1,6 @@
 # RecommendFood
-## Do an lap trinh tren thiet bi di dong
-### Thanh vien nhom 
+## Programming project on mobile devices
+### Members 
 #### Nguyen Trung Thien ( Leader Team )
 #### Doan Van Thinh
 #### Doan Trung Huy
